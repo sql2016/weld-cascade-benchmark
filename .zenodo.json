@@ -1,0 +1,31 @@
+{
+  "title": "WeldCascade reproducible benchmark artefacts (Sensors)",
+  "description": "Benchmark JSON exports, CPU reproduction scripts, and documentation for WeldCascade: a two-stage YOLOv8n + ResNet-18 cascade for steel-pipe weld radiography (MDPI Sensors). Includes oracle vs detector-routed evaluation over five ResNet seeds on the Steel Pipe public corpus.",
+  "upload_type": "software",
+  "publication_date": "2026-06-13",
+  "creators": [
+    {
+      "name": "Zhu, Yangpeng",
+      "affiliation": "Xi'an Shiyou University",
+      "orcid": "0009-0005-9991-4164"
+    }
+  ],
+  "keywords": [
+    "weld radiography",
+    "nondestructive testing",
+    "YOLOv8",
+    "ResNet",
+    "benchmark",
+    "steel pipe",
+    "reproducibility"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/sql2016/weld-cascade-benchmark",
+      "resource_type": "software"
+    }
+  ],
+  "version": "1.0.0-sensors"
+}

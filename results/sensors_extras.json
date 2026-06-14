@@ -1,0 +1,38 @@
+{
+  "generated": "2026-06-12T09:25:28Z",
+  "gdxray_external": {
+    "available": false,
+    "note": "Skipped or manual download required; see SENSORS_SUBMISSION.md"
+  },
+  "latency": {
+    "hardware": "CPU-only; Windows; PyTorch + Ultralytics YOLOv8n",
+    "n_images": 30,
+    "warmup_runs": 3,
+    "mean_detections_per_image": 2.37,
+    "stage1_yolo": {
+      "mean_ms": 55.12,
+      "std_ms": 1.95,
+      "p50_ms": 54.75,
+      "p95_ms": 58.12
+    },
+    "stage2_resnet18_per_roi": {
+      "mean_ms": 27.15,
+      "std_ms": 1.02,
+      "p50_ms": 27.04,
+      "p95_ms": 28.51
+    },
+    "stage2_resnet18_per_image_est": {
+      "mean_ms": 64.18,
+      "std_ms": 26.97,
+      "p50_ms": 66.83,
+      "p95_ms": 100.38
+    },
+    "cascade_end_to_end": {
+      "mean_ms": 129.11,
+      "std_ms": 41.39,
+      "p50_ms": 135.56,
+      "p95_ms": 185.57
+    },
+    "throughput_fps_est": 7.75
+  }
+}

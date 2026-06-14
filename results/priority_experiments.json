@@ -1,0 +1,246 @@
+{
+  "generated": "2026-06-13T16:39:15Z",
+  "stage1_retrain": {
+    "epochs": 10,
+    "map50": 0.9179357197465842,
+    "map50_95": 0.5157614272524624,
+    "precision": 0.8648260660747865,
+    "recall": 0.8547400611620795,
+    "weights": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_defect\\weights\\best.pt",
+    "note": "Stage-1 retrain; metrics on test split",
+    "eval_split": "test"
+  },
+  "routed_eval": {
+    "split": "test",
+    "conf_threshold": 0.25,
+    "iou_match_threshold": 0.5,
+    "n_gt_boxes": 654,
+    "n_matched_boxes": 571,
+    "n_missed_boxes": 83,
+    "n_matched_correct": 346,
+    "n_matched_misclassified": 225,
+    "detection_recall_on_gt": 0.8730886850152905,
+    "routed_test_acc": 0.4672504378283713,
+    "routed_test_acc_std": 0.09312806035222367,
+    "routed_test_f1_macro": 0.6945039935780806,
+    "routed_test_f1_macro_std": 0.07279114832617835,
+    "routed_test_f1_weighted": 0.5440168436916504,
+    "routed_test_f1_weighted_std": 0.10629332593727753,
+    "class_names": [
+      "bite_edge",
+      "broken_arc",
+      "crack",
+      "overlap",
+      "porosity",
+      "slag_inclusion",
+      "unfused"
+    ],
+    "n_seeds": 5,
+    "seeds": [
+      {
+        "seed": 0,
+        "routed_test_f1_macro": 0.7705335023004647,
+        "routed_test_acc": 0.6059544658493871,
+        "n_matched_correct": 346,
+        "n_matched_misclassified": 225
+      },
+      {
+        "seed": 1,
+        "routed_test_f1_macro": 0.7410656996408661,
+        "routed_test_acc": 0.4798598949211909,
+        "n_matched_correct": 274,
+        "n_matched_misclassified": 297
+      },
+      {
+        "seed": 2,
+        "routed_test_f1_macro": 0.6621337169174216,
+        "routed_test_acc": 0.46409807355516636,
+        "n_matched_correct": 265,
+        "n_matched_misclassified": 306
+      },
+      {
+        "seed": 3,
+        "routed_test_f1_macro": 0.7131429667934227,
+        "routed_test_acc": 0.3467600700525394,
+        "n_matched_correct": 198,
+        "n_matched_misclassified": 373
+      },
+      {
+        "seed": 4,
+        "routed_test_f1_macro": 0.5856440822382277,
+        "routed_test_acc": 0.4395796847635727,
+        "n_matched_correct": 251,
+        "n_matched_misclassified": 320
+      }
+    ],
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        220,
+        193,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        40
+      ]
+    ],
+    "missed_examples": [
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-15.jpg",
+        "stem": "steel_steel_air-hole1-15",
+        "gt_class": "porosity",
+        "gt_box": [
+          867,
+          313,
+          898,
+          338
+        ],
+        "best_iou": 0.0
+      },
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-26.jpg",
+        "stem": "steel_steel_air-hole1-26",
+        "gt_class": "porosity",
+        "gt_box": [
+          748,
+          302,
+          771,
+          314
+        ],
+        "best_iou": 0.0
+      },
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole10-216.jpg",
+        "stem": "steel_steel_air-hole10-216",
+        "gt_class": "porosity",
+        "gt_box": [
+          302,
+          271,
+          324,
+          291
+        ],
+        "best_iou": 0.0
+      }
+    ],
+    "misclassified_examples": [
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-21.jpg",
+        "stem": "steel_steel_air-hole1-21",
+        "gt_class": "porosity",
+        "pred_class": "slag_inclusion",
+        "det_box": [
+          924,
+          338,
+          947,
+          354
+        ],
+        "crop_box": [
+          920,
+          335,
+          950,
+          356
+        ]
+      },
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-39.jpg",
+        "stem": "steel_steel_air-hole1-39",
+        "gt_class": "porosity",
+        "pred_class": "slag_inclusion",
+        "det_box": [
+          475,
+          335,
+          491,
+          347
+        ],
+        "crop_box": [
+          472,
+          333,
+          493,
+          348
+        ]
+      },
+      {
+        "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-39.jpg",
+        "stem": "steel_steel_air-hole1-39",
+        "gt_class": "porosity",
+        "pred_class": "slag_inclusion",
+        "det_box": [
+          704,
+          314,
+          723,
+          331
+        ],
+        "crop_box": [
+          701,
+          311,
+          725,
+          333
+        ]
+      }
+    ]
+  },
+  "yolo_multiclass_baseline": {
+    "epochs": 10,
+    "map50": 0.9749442133124476,
+    "map50_95": 0.6784058407509462,
+    "precision": 0.9446948382272063,
+    "recall": 0.9292001763294916,
+    "weights": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_multiclass\\weights\\best.pt",
+    "eval_split": "test"
+  },
+  "p0_fixes_elapsed_sec": 3017.2
+}

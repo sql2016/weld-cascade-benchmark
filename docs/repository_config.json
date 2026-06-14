@@ -1,0 +1,12 @@
+{
+  "github_org": "sql2016",
+  "github_repo": "weld-cascade-benchmark",
+  "github_url": "https://github.com/sql2016/weld-cascade-benchmark",
+  "release_tag": "v1.0-sensors",
+  "release_url": "https://github.com/sql2016/weld-cascade-benchmark/releases/tag/v1.0-sensors",
+  "zenodo_doi": null,
+  "zenodo_url": null,
+  "version": "1.0.0-sensors",
+  "license": "MIT",
+  "notes": "Set zenodo_doi after Zenodo upload; re-run render_paper_weld_two_stage_sensors.py to refresh Data Availability."
+}

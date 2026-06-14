@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "WeldCascade reproducible benchmark artefacts (Sensors)"
+message: "If you use this benchmark, please cite the WeldCascade Sensors manuscript and this repository."
+version: "1.0.0-sensors"
+date-released: "2026-06-14"
+authors:
+  - family-names: Zhu
+    given-names: Yangpeng
+    orcid: "https://orcid.org/0009-0005-9991-4164"
+    affiliation: "Xi'an Shiyou University"
+repository-code: "https://github.com/sql2016/weld-cascade-benchmark"
+license: MIT
+keywords:
+  - weld radiography
+  - nondestructive testing
+  - YOLOv8
+  - benchmark

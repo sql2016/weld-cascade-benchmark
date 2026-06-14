@@ -1,0 +1,1310 @@
+{
+  "generated": "2026-06-12T00:36:25Z",
+  "elapsed_sec": 4939.6,
+  "hardware_note": "CPU-only; Windows; PyTorch ResNet-18 + Ultralytics YOLOv8n stage-1 log",
+  "dataset": {
+    "splits": {
+      "train": {
+        "total": 1297,
+        "per_class": {
+          "bite_edge": 24,
+          "broken_arc": 356,
+          "crack": 87,
+          "overlap": 173,
+          "porosity": 224,
+          "slag_inclusion": 102,
+          "unfused": 331
+        }
+      },
+      "val": {
+        "total": 167,
+        "per_class": {
+          "bite_edge": 8,
+          "broken_arc": 50,
+          "crack": 17,
+          "overlap": 20,
+          "porosity": 32,
+          "slag_inclusion": 6,
+          "unfused": 34
+        }
+      },
+      "test": {
+        "total": 159,
+        "per_class": {
+          "bite_edge": 3,
+          "broken_arc": 45,
+          "crack": 12,
+          "overlap": 23,
+          "porosity": 23,
+          "slag_inclusion": 11,
+          "unfused": 42
+        }
+      }
+    },
+    "classes": [
+      "bite_edge",
+      "broken_arc",
+      "crack",
+      "overlap",
+      "porosity",
+      "slag_inclusion",
+      "unfused"
+    ]
+  },
+  "stage1": {
+    "epochs": 10,
+    "map50": 0.9179357197465842,
+    "precision": 0.8648260660747865,
+    "recall": 0.8547400611620795,
+    "source": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_defect-2\\results.csv",
+    "skipped": true,
+    "weights": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_defect\\weights\\best.pt",
+    "note": "Stage-1 retrain; metrics on test split",
+    "map50_95": 0.5157614272524624,
+    "eval_split": "test"
+  },
+  "stage2_seeds": [
+    {
+      "seed": 0,
+      "epochs": 5,
+      "lr": 0.001,
+      "batch": 16,
+      "val_acc": 0.9880239520958084,
+      "f1_macro": 0.9758358048891715,
+      "f1_weighted": 0.9743781829454872,
+      "test_acc": 0.9748427672955975,
+      "test_f1_macro": 0.9758358048891715,
+      "test_f1_weighted": 0.9743781829454872,
+      "val_f1_macro": 0.9892097951799445,
+      "val_f1_weighted": 0.9880699929855349,
+      "per_class": {
+        "bite_edge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        },
+        "broken_arc": {
+          "precision": 0.9772727272727273,
+          "recall": 0.9555555555555556,
+          "f1": 0.9662921348314607,
+          "support": 45
+        },
+        "crack": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 12
+        },
+        "overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        "porosity": {
+          "precision": 0.9583333333333334,
+          "recall": 1.0,
+          "f1": 0.9787234042553191,
+          "support": 23
+        },
+        "slag_inclusion": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 11
+        },
+        "unfused": {
+          "precision": 0.9545454545454546,
+          "recall": 1.0,
+          "f1": 0.9767441860465116,
+          "support": 42
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          43,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          10,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      ],
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ]
+    },
+    {
+      "seed": 1,
+      "epochs": 5,
+      "lr": 0.001,
+      "batch": 16,
+      "val_acc": 0.9700598802395209,
+      "f1_macro": 0.9251072093005118,
+      "f1_weighted": 0.9625992345775214,
+      "test_acc": 0.9622641509433962,
+      "test_f1_macro": 0.9251072093005118,
+      "test_f1_weighted": 0.9625992345775214,
+      "val_f1_macro": 0.968420479066259,
+      "val_f1_weighted": 0.9700998641507013,
+      "per_class": {
+        "bite_edge": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75,
+          "support": 3
+        },
+        "broken_arc": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1": 0.9655172413793104,
+          "support": 45
+        },
+        "crack": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 12
+        },
+        "overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        "porosity": {
+          "precision": 0.92,
+          "recall": 1.0,
+          "f1": 0.9583333333333334,
+          "support": 23
+        },
+        "slag_inclusion": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1": 0.9565217391304348,
+          "support": 11
+        },
+        "unfused": {
+          "precision": 0.9767441860465116,
+          "recall": 1.0,
+          "f1": 0.9882352941176471,
+          "support": 42
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          42,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          9,
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      ],
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ]
+    },
+    {
+      "seed": 2,
+      "epochs": 5,
+      "lr": 0.001,
+      "batch": 16,
+      "val_acc": 0.9820359281437125,
+      "f1_macro": 0.9461362091896974,
+      "f1_weighted": 0.950074273053207,
+      "test_acc": 0.949685534591195,
+      "test_f1_macro": 0.9461362091896974,
+      "test_f1_weighted": 0.950074273053207,
+      "val_f1_macro": 0.9794251500133854,
+      "val_f1_weighted": 0.9821371380371028,
+      "per_class": {
+        "bite_edge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        },
+        "broken_arc": {
+          "precision": 1.0,
+          "recall": 0.9111111111111111,
+          "f1": 0.9534883720930233,
+          "support": 45
+        },
+        "crack": {
+          "precision": 0.9090909090909091,
+          "recall": 0.8333333333333334,
+          "f1": 0.8695652173913043,
+          "support": 12
+        },
+        "overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        "porosity": {
+          "precision": 0.9583333333333334,
+          "recall": 1.0,
+          "f1": 0.9787234042553191,
+          "support": 23
+        },
+        "slag_inclusion": {
+          "precision": 0.7857142857142857,
+          "recall": 1.0,
+          "f1": 0.88,
+          "support": 11
+        },
+        "unfused": {
+          "precision": 0.9302325581395349,
+          "recall": 0.9523809523809523,
+          "f1": 0.9411764705882353,
+          "support": 42
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          41,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          40
+        ]
+      ],
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ]
+    },
+    {
+      "seed": 3,
+      "epochs": 5,
+      "lr": 0.001,
+      "batch": 16,
+      "val_acc": 0.9461077844311377,
+      "f1_macro": 0.9209094611168022,
+      "f1_weighted": 0.9193187755581254,
+      "test_acc": 0.9182389937106918,
+      "test_f1_macro": 0.9209094611168022,
+      "test_f1_weighted": 0.9193187755581254,
+      "val_f1_macro": 0.9326134910011498,
+      "val_f1_weighted": 0.9481766916676013,
+      "per_class": {
+        "bite_edge": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        },
+        "broken_arc": {
+          "precision": 1.0,
+          "recall": 0.8444444444444444,
+          "f1": 0.9156626506024096,
+          "support": 45
+        },
+        "crack": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091,
+          "support": 12
+        },
+        "overlap": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        "porosity": {
+          "precision": 0.95,
+          "recall": 0.8260869565217391,
+          "f1": 0.8837209302325582,
+          "support": 23
+        },
+        "slag_inclusion": {
+          "precision": 0.6875,
+          "recall": 1.0,
+          "f1": 0.8148148148148148,
+          "support": 11
+        },
+        "unfused": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.9230769230769231,
+          "support": 42
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          38,
+          0,
+          0,
+          0,
+          0,
+          7
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          19,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          42
+        ]
+      ],
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ]
+    },
+    {
+      "seed": 4,
+      "epochs": 5,
+      "lr": 0.001,
+      "batch": 16,
+      "val_acc": 0.9640718562874252,
+      "f1_macro": 0.9366946818668428,
+      "f1_weighted": 0.9433077987092635,
+      "test_acc": 0.9433962264150944,
+      "test_f1_macro": 0.9366946818668428,
+      "test_f1_weighted": 0.9433077987092635,
+      "val_f1_macro": 0.9684078176725236,
+      "val_f1_weighted": 0.9638250237492929,
+      "per_class": {
+        "bite_edge": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 3
+        },
+        "broken_arc": {
+          "precision": 0.8958333333333334,
+          "recall": 0.9555555555555556,
+          "f1": 0.9247311827956989,
+          "support": 45
+        },
+        "crack": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1": 0.9166666666666666,
+          "support": 12
+        },
+        "overlap": {
+          "precision": 0.9583333333333334,
+          "recall": 1.0,
+          "f1": 0.9787234042553191,
+          "support": 23
+        },
+        "porosity": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 23
+        },
+        "slag_inclusion": {
+          "precision": 0.9166666666666666,
+          "recall": 1.0,
+          "f1": 0.9565217391304348,
+          "support": 11
+        },
+        "unfused": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231,
+          "support": 42
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          43,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          11,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          4,
+          1,
+          1,
+          0,
+          0,
+          36
+        ]
+      ],
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ]
+    }
+  ],
+  "stage2_summary": {
+    "n_seeds": 5,
+    "eval_split": "test",
+    "val_acc_mean": 0.9700598802395209,
+    "val_acc_std": 0.016398878967220528,
+    "test_acc_mean": 0.949685534591195,
+    "test_acc_std": 0.02132808170794109,
+    "f1_macro_mean": 0.9409366732726051,
+    "f1_macro_std": 0.02187830094412876,
+    "f1_weighted_mean": 0.9499356529687208,
+    "f1_weighted_std": 0.020851525248862097,
+    "f1_macro_bootstrap_ci95": [
+      0.9257456045402941,
+      0.9597501666315447
+    ]
+  },
+  "baselines": [
+    {
+      "name": "Majority class",
+      "f1_macro": 0.06302521008403361,
+      "val_acc": 0.2830188679245283
+    },
+    {
+      "name": "ResNet-18 (5 ep, mean)",
+      "f1_macro": 0.9409366732726051,
+      "val_acc": 0.949685534591195
+    },
+    {
+      "name": "ResNet-18 (15 ep)",
+      "f1_macro": 0.982932989637144,
+      "val_acc": 0.9874213836477987
+    },
+    {
+      "name": "ResNet-18 (best seed)",
+      "f1_macro": 0.9758358048891715,
+      "val_acc": 0.9748427672955975
+    }
+  ],
+  "long_training": {
+    "seed": 0,
+    "epochs": 15,
+    "lr": 0.001,
+    "batch": 16,
+    "val_acc": 0.9940119760479041,
+    "f1_macro": 0.982932989637144,
+    "f1_weighted": 0.9874529579895864,
+    "test_acc": 0.9874213836477987,
+    "test_f1_macro": 0.982932989637144,
+    "test_f1_weighted": 0.9874529579895864,
+    "val_f1_macro": 0.9934731934731935,
+    "val_f1_weighted": 0.9939673101349749,
+    "per_class": {
+      "bite_edge": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 3
+      },
+      "broken_arc": {
+        "precision": 1.0,
+        "recall": 0.9777777777777777,
+        "f1": 0.9887640449438202,
+        "support": 45
+      },
+      "crack": {
+        "precision": 1.0,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348,
+        "support": 12
+      },
+      "overlap": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 23
+      },
+      "porosity": {
+        "precision": 0.9583333333333334,
+        "recall": 1.0,
+        "f1": 0.9787234042553191,
+        "support": 23
+      },
+      "slag_inclusion": {
+        "precision": 0.9166666666666666,
+        "recall": 1.0,
+        "f1": 0.9565217391304348,
+        "support": 11
+      },
+      "unfused": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 42
+      }
+    },
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        44,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        11,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        23,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        23,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42
+      ]
+    ],
+    "class_names": [
+      "bite_edge",
+      "broken_arc",
+      "crack",
+      "overlap",
+      "porosity",
+      "slag_inclusion",
+      "unfused"
+    ]
+  },
+  "majority_class": {
+    "name": "majority_class",
+    "predicted_class": "broken_arc",
+    "val_acc": 0.2830188679245283,
+    "f1_macro": 0.06302521008403361,
+    "f1_weighted": 0.12486126526082131
+  },
+  "best_seed": 0,
+  "per_class_best_seed": {
+    "bite_edge": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 3
+    },
+    "broken_arc": {
+      "precision": 0.9772727272727273,
+      "recall": 0.9555555555555556,
+      "f1": 0.9662921348314607,
+      "support": 45
+    },
+    "crack": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "support": 12
+    },
+    "overlap": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 23
+    },
+    "porosity": {
+      "precision": 0.9583333333333334,
+      "recall": 1.0,
+      "f1": 0.9787234042553191,
+      "support": 23
+    },
+    "slag_inclusion": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 11
+    },
+    "unfused": {
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1": 0.9767441860465116,
+      "support": 42
+    }
+  },
+  "priority_experiments": {
+    "generated": "2026-06-13T16:39:15Z",
+    "stage1_retrain": {
+      "epochs": 10,
+      "map50": 0.9179357197465842,
+      "map50_95": 0.5157614272524624,
+      "precision": 0.8648260660747865,
+      "recall": 0.8547400611620795,
+      "weights": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_defect\\weights\\best.pt",
+      "note": "Stage-1 retrain; metrics on test split",
+      "eval_split": "test"
+    },
+    "routed_eval": {
+      "split": "test",
+      "conf_threshold": 0.25,
+      "iou_match_threshold": 0.5,
+      "n_gt_boxes": 654,
+      "n_matched_boxes": 571,
+      "n_missed_boxes": 83,
+      "n_matched_correct": 346,
+      "n_matched_misclassified": 225,
+      "detection_recall_on_gt": 0.8730886850152905,
+      "routed_test_acc": 0.4672504378283713,
+      "routed_test_acc_std": 0.09312806035222367,
+      "routed_test_f1_macro": 0.6945039935780806,
+      "routed_test_f1_macro_std": 0.07279114832617835,
+      "routed_test_f1_weighted": 0.5440168436916504,
+      "routed_test_f1_weighted_std": 0.10629332593727753,
+      "class_names": [
+        "bite_edge",
+        "broken_arc",
+        "crack",
+        "overlap",
+        "porosity",
+        "slag_inclusion",
+        "unfused"
+      ],
+      "n_seeds": 5,
+      "seeds": [
+        {
+          "seed": 0,
+          "routed_test_f1_macro": 0.7705335023004647,
+          "routed_test_acc": 0.6059544658493871,
+          "n_matched_correct": 346,
+          "n_matched_misclassified": 225
+        },
+        {
+          "seed": 1,
+          "routed_test_f1_macro": 0.7410656996408661,
+          "routed_test_acc": 0.4798598949211909,
+          "n_matched_correct": 274,
+          "n_matched_misclassified": 297
+        },
+        {
+          "seed": 2,
+          "routed_test_f1_macro": 0.6621337169174216,
+          "routed_test_acc": 0.46409807355516636,
+          "n_matched_correct": 265,
+          "n_matched_misclassified": 306
+        },
+        {
+          "seed": 3,
+          "routed_test_f1_macro": 0.7131429667934227,
+          "routed_test_acc": 0.3467600700525394,
+          "n_matched_correct": 198,
+          "n_matched_misclassified": 373
+        },
+        {
+          "seed": 4,
+          "routed_test_f1_macro": 0.5856440822382277,
+          "routed_test_acc": 0.4395796847635727,
+          "n_matched_correct": 251,
+          "n_matched_misclassified": 320
+        }
+      ],
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          0,
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          22,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          0,
+          220,
+          193,
+          15
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          40
+        ]
+      ],
+      "missed_examples": [
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-15.jpg",
+          "stem": "steel_steel_air-hole1-15",
+          "gt_class": "porosity",
+          "gt_box": [
+            867,
+            313,
+            898,
+            338
+          ],
+          "best_iou": 0.0
+        },
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-26.jpg",
+          "stem": "steel_steel_air-hole1-26",
+          "gt_class": "porosity",
+          "gt_box": [
+            748,
+            302,
+            771,
+            314
+          ],
+          "best_iou": 0.0
+        },
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole10-216.jpg",
+          "stem": "steel_steel_air-hole10-216",
+          "gt_class": "porosity",
+          "gt_box": [
+            302,
+            271,
+            324,
+            291
+          ],
+          "best_iou": 0.0
+        }
+      ],
+      "misclassified_examples": [
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-21.jpg",
+          "stem": "steel_steel_air-hole1-21",
+          "gt_class": "porosity",
+          "pred_class": "slag_inclusion",
+          "det_box": [
+            924,
+            338,
+            947,
+            354
+          ],
+          "crop_box": [
+            920,
+            335,
+            950,
+            356
+          ]
+        },
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-39.jpg",
+          "stem": "steel_steel_air-hole1-39",
+          "gt_class": "porosity",
+          "pred_class": "slag_inclusion",
+          "det_box": [
+            475,
+            335,
+            491,
+            347
+          ],
+          "crop_box": [
+            472,
+            333,
+            493,
+            348
+          ]
+        },
+        {
+          "image": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\stage1_binary\\images\\test\\steel_steel_air-hole1-39.jpg",
+          "stem": "steel_steel_air-hole1-39",
+          "gt_class": "porosity",
+          "pred_class": "slag_inclusion",
+          "det_box": [
+            704,
+            314,
+            723,
+            331
+          ],
+          "crop_box": [
+            701,
+            311,
+            725,
+            333
+          ]
+        }
+      ]
+    },
+    "yolo_multiclass_baseline": {
+      "epochs": 10,
+      "map50": 0.9749442133124476,
+      "map50_95": 0.6784058407509462,
+      "precision": 0.9446948382272063,
+      "recall": 0.9292001763294916,
+      "weights": "F:\\AutoResearchClaw-latest-src\\data\\weld_plan_b\\prepared\\runs\\stage1_multiclass\\weights\\best.pt",
+      "eval_split": "test"
+    },
+    "p0_fixes_elapsed_sec": 3017.2
+  },
+  "sensors_extras": {
+    "generated": "2026-06-12T09:25:28Z",
+    "gdxray_external": {
+      "available": false,
+      "note": "Skipped or manual download required; see SENSORS_SUBMISSION.md"
+    },
+    "latency": {
+      "hardware": "CPU-only; Windows; PyTorch + Ultralytics YOLOv8n",
+      "n_images": 30,
+      "warmup_runs": 3,
+      "mean_detections_per_image": 2.37,
+      "stage1_yolo": {
+        "mean_ms": 55.12,
+        "std_ms": 1.95,
+        "p50_ms": 54.75,
+        "p95_ms": 58.12
+      },
+      "stage2_resnet18_per_roi": {
+        "mean_ms": 27.15,
+        "std_ms": 1.02,
+        "p50_ms": 27.04,
+        "p95_ms": 28.51
+      },
+      "stage2_resnet18_per_image_est": {
+        "mean_ms": 64.18,
+        "std_ms": 26.97,
+        "p50_ms": 66.83,
+        "p95_ms": 100.38
+      },
+      "cascade_end_to_end": {
+        "mean_ms": 129.11,
+        "std_ms": 41.39,
+        "p50_ms": 135.56,
+        "p95_ms": 185.57
+      },
+      "throughput_fps_est": 7.75
+    }
+  },
+  "routed_viz": {
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        40,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        22,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0,
+        220,
+        193,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        40
+      ]
+    ],
+    "class_names": [
+      "bite_edge",
+      "broken_arc",
+      "crack",
+      "overlap",
+      "porosity",
+      "slag_inclusion",
+      "unfused"
+    ]
+  }
+}

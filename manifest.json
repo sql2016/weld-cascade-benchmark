@@ -1,0 +1,27 @@
+{
+  "package": "weld-cascade-benchmark",
+  "version": "1.0.0-sensors",
+  "generated_utc": "2026-06-14T01:46:50.281640+00:00",
+  "github_url": "https://github.com/sql2016/weld-cascade-benchmark",
+  "release_url": "https://github.com/sql2016/weld-cascade-benchmark/releases/tag/v1.0-sensors",
+  "results": [
+    "revision_benchmark.json",
+    "priority_experiments.json",
+    "sensors_extras.json",
+    "routed_viz.json"
+  ],
+  "scripts": [
+    "run_weld_revision_benchmark.py",
+    "run_weld_p0_fixes.py",
+    "run_weld_priority_experiments.py",
+    "run_weld_routed_viz.py",
+    "run_weld_sensors_extras.py",
+    "config.py",
+    "prepare_steel_pipe.py",
+    "prepare_stage1.py",
+    "prepare_stage2_roi.py",
+    "train_stage1.py",
+    "train_stage2.py",
+    "io_utils.py"
+  ]
+}
