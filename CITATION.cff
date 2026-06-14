@@ -9,6 +9,7 @@ authors:
     orcid: "https://orcid.org/0009-0005-9991-4164"
     affiliation: "Xi'an Shiyou University"
 repository-code: "https://github.com/sql2016/weld-cascade-benchmark"
+doi: "10.5281/zenodo.20684859"
 license: MIT
 keywords:
   - weld radiography
