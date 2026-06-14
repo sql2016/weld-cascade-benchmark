@@ -8,7 +8,7 @@ Reproducible benchmark artefacts for **WeldCascade**: a two-stage YOLOv8n + ResN
 |------|-----|
 | GitHub release | [v1.0-sensors](https://github.com/sql2016/weld-cascade-benchmark/releases/tag/v1.0-sensors) |
 | Version | `1.0.0-sensors` |
-- **Zenodo DOI:** upload `weld-cascade-benchmark-v1.0-sensors.zip` to [Zenodo](https://zenodo.org) and add the DOI to `repository_config.json`.
+| Zenodo DOI | [10.5281/zenodo.20684859](https://doi.org/10.5281/zenodo.20684859) |
 
 ## Contents
 
